@@ -24,14 +24,20 @@
         
         <nav class="nav">
           <ul class="nav-links">
-            <li><a href="index.html" class="nav-link active">首页</a></li>
-            <li><a href="#services" class="nav-link">求职赋能<br><span class="nav-link-en">Career Coaching</span></a></li>
-            <li><a href="#services" class="nav-link">澳洲直聘<br><span class="nav-link-en">Australia Direct Recruitment</span></a></li>
-            <li><a href="visa-services.html" class="nav-link">持证办签<br><span class="nav-link-en">Licensed Visa Service</span></a></li>
-            <li><a href="#services" class="nav-link">落地安家<br><span class="nav-link-en">Arrival & Accommodation</span></a></li>
-            <li><a href="#services" class="nav-link">职业陪跑<br><span class="nav-link-en">Full-cycle Career Planning</span></a></li>
-            <li><a href="#services" class="nav-link">家属安置<br><span class="nav-link-en">Dependent Support</span></a></li>
-            <li><a href="contact-us.html" class="nav-link">联系我们</a></li>
+            <li><a href="index.html" class="nav-link active" data-i18n="nav_home">首页</a></li>
+            <li><a href="destinations.html" class="nav-link" data-i18n="nav_destinations">目的地</a></li>
+            <li class="nav-dropdown">
+              <a href="#" class="nav-link"><span data-i18n="nav_work">海外全职就业</span> <i class="fas fa-chevron-down" style="font-size: 0.75rem;"></i></a>
+              <ul class="nav-dropdown-menu">
+                <li><a href="work-overseas.html" class="nav-dropdown-item"><i class="fas fa-briefcase"></i> <span data-i18n="nav_work">海外全职就业</span></a></li>
+                <li><a href="intern-abroad.html" class="nav-dropdown-item"><i class="fas fa-user-graduate"></i> <span data-i18n="nav_intern_overseas">海外实习</span></a></li>
+                <li><a href="global-programs.html" class="nav-dropdown-item"><i class="fas fa-globe"></i> <span data-i18n="nav_global_exchange">全球交流项目</span></a></li>
+              </ul>
+            </li>
+            <li><a href="visa-services.html" class="nav-link" data-i18n="nav_visa">签证服务</a></li>
+            <li><a href="for-employers.html" class="nav-link" data-i18n="nav_service">业务介绍</a></li>
+            <li><a href="about-us.html" class="nav-link" data-i18n="nav_about">关于我们</a></li>
+            <li><a href="contact-us.html" class="nav-link" data-i18n="nav_contact">联系我们</a></li>
           </ul>
         </nav>
         
@@ -54,15 +60,15 @@
   <!-- Mobile Menu -->
   <div class="mobile-menu">
     <ul class="mobile-nav-links">
-      <li><a href="index.html" class="mobile-nav-link active">首页</a></li>
-      <li><a href="#services" class="mobile-nav-link">求职赋能 <span class="mobile-nav-link-en">Career Coaching</span></a></li>
-      <li><a href="#services" class="mobile-nav-link">澳洲直聘 <span class="mobile-nav-link-en">Australia Direct Recruitment</span></a></li>
-      <li><a href="visa-services.html" class="mobile-nav-link">持证办签 <span class="mobile-nav-link-en">Licensed Visa Service</span></a></li>
-      <li><a href="#services" class="mobile-nav-link">落地安家 <span class="mobile-nav-link-en">Arrival & Accommodation</span></a></li>
-      <li><a href="#services" class="mobile-nav-link">职业陪跑 <span class="mobile-nav-link-en">Full-cycle Career Planning</span></a></li>
-      <li><a href="#services" class="mobile-nav-link">家属安置 <span class="mobile-nav-link-en">Dependent Support</span></a></li>
-      <li><a href="about-us.html" class="mobile-nav-link">关于我们</a></li>
-      <li><a href="contact-us.html" class="mobile-nav-link">联系我们</a></li>
+      <li><a href="index.html" class="mobile-nav-link active" data-i18n="nav_home">首页</a></li>
+      <li><a href="destinations.html" class="mobile-nav-link" data-i18n="nav_destinations">目的地</a></li>
+      <li><a href="work-overseas.html" class="mobile-nav-link" data-i18n="nav_work">海外全职就业</a></li>
+      <li><a href="intern-abroad.html" class="mobile-nav-link" data-i18n="nav_intern_overseas">海外实习</a></li>
+      <li><a href="global-programs.html" class="mobile-nav-link" data-i18n="nav_global_exchange">全球交流项目</a></li>
+      <li><a href="visa-services.html" class="mobile-nav-link" data-i18n="nav_visa">签证服务</a></li>
+      <li><a href="for-employers.html" class="mobile-nav-link" data-i18n="nav_service">业务介绍</a></li>
+      <li><a href="about-us.html" class="mobile-nav-link" data-i18n="nav_about">关于我们</a></li>
+      <li><a href="contact-us.html" class="mobile-nav-link" data-i18n="nav_contact">联系我们</a></li>
     </ul>
   </div>
 
@@ -222,102 +228,60 @@
   </section>
 
   <!-- Services Section -->
-  <section class="section services" id="services">
+  <section class="section services">
     <div class="container">
       <div class="section-header">
-        <h2>六大业务介绍</h2>
-        <p>Our Six Core Services</p>
+        <h2 data-i18n="services_title">我们的服务</h2>
+        <p data-i18n="services_subtitle">为您的国际之旅每个阶段提供全面解决方案</p>
       </div>
       
       <div class="services-grid">
-        <!-- Service 1: Career Coaching -->
+        <!-- Work Overseas -->
         <div class="service-card">
-          <div class="service-icon" style="background: linear-gradient(135deg, #0D7377, #32E0C4);">
-            <i class="fas fa-file-text"></i>
+          <div class="service-icon">
+            <i class="fas fa-briefcase"></i>
           </div>
-          <h3>求职赋能</h3>
-          <p class="service-subtitle">Career Coaching</p>
-          <div class="lang-content" data-lang="zh">
-            <p class="service-desc">依托海外HR与本土在职雇主评审视角，定制化优化个人简历，按照澳洲、新西兰、英国等多国企业招聘偏好调整履历结构、工作内容与项目亮点；开设系统化面试专项培训，梳理海外高频面试问题、面试官考核逻辑、商务沟通礼仪，针对性模拟线上面试、线下实景面试；结合对应行业岗位要求开展专项能力拔高辅导，补齐专业短板与职场软实力，从简历投递到面试通关全链路打磨，稳步提升求职录取成功率。</p>
-          </div>
-          <div class="lang-content" data-lang="en" style="display: none;">
-            <p class="service-desc">We provide customized resume polishing based on overseas HR and local employer recruitment standards tailored for Australia, New Zealand, the UK and other mainstream destination countries. We deliver systematic interview coaching covering common interview questions, assessment criteria and business etiquette, with simulated online & offline mock interviews. Targeted competency training is arranged to improve professional skills and soft skills, helping clients boost offer rate from resume submission to final interview.</p>
-          </div>
+          <h3 data-i18n="service_work_title">海外全职就业</h3>
+          <p data-i18n="service_work_desc">为有经验的专业人士提供酒店、技术工种和护理等领域的全职就业机会。</p>
+          <ul class="service-features">
+            <li data-i18n="service_work_feature1">直接对接雇主</li>
+            <li data-i18n="service_work_feature2">签证担保支持</li>
+            <li data-i18n="service_work_feature3">面试辅导</li>
+            <li data-i18n="service_work_feature4">落地后协助</li>
+          </ul>
+          <a href="work-overseas.html" class="btn btn-secondary" data-i18n="service_work_cta">查看职位</a>
         </div>
         
-        <!-- Service 2: Australia Direct Recruitment -->
+        <!-- Intern Abroad -->
         <div class="service-card">
-          <div class="service-icon" style="background: linear-gradient(135deg, #2563EB, #60A5FA);">
-            <i class="fas fa-building"></i>
+          <div class="service-icon">
+            <i class="fas fa-user-graduate"></i>
           </div>
-          <h3>澳洲直聘</h3>
-          <p class="service-subtitle">Australia Direct Recruitment</p>
-          <div class="lang-content" data-lang="zh">
-            <p class="service-desc">集团海外总部坐落于澳大利亚悉尼，为直营实体公司，深耕澳洲本地用工市场多年，签约海量正规本土雇主，涵盖酒店康养、蓝领技术、商科IT、金融市场等全品类岗位。实时同步一手内部招聘信息，跳过多层中间中介环节，优先推送岗位面试邀约，岗位全部经过实地核验，用工合同合规有保障，实现岗位资源直达求职者。</p>
-          </div>
-          <div class="lang-content" data-lang="en" style="display: none;">
-            <p class="service-desc">Headquartered in Sydney, Australia, our local subsidiary has long-term cooperation with numerous verified Australian employers covering hospitality, aged care, skilled trades, business, IT and finance. We provide exclusive first-hand job openings and direct interview opportunities without redundant intermediaries, with all positions verified and formal employment contracts guaranteed.</p>
-          </div>
+          <h3 data-i18n="service_intern_title">白领假期实习</h3>
+          <p data-i18n="service_intern_desc">为学生提供IT、商务和办公环境等领域的短期实习项目。</p>
+          <ul class="service-features">
+            <li data-i18n="service_intern_feature1">精选实习匹配</li>
+            <li data-i18n="service_intern_feature2">学分转换支持</li>
+            <li data-i18n="service_intern_feature3">住宿安排协助</li>
+            <li data-i18n="service_intern_feature4">文化适应培训</li>
+          </ul>
+          <a href="intern-abroad.html" class="btn btn-secondary" data-i18n="service_intern_cta">探索项目</a>
         </div>
         
-        <!-- Service 3: Licensed Visa Service -->
+        <!-- Global Programs -->
         <div class="service-card">
-          <div class="service-icon" style="background: linear-gradient(135deg, #D4A574, #E4C090);">
-            <i class="fas fa-passport"></i>
+          <div class="service-icon">
+            <i class="fas fa-globe-americas"></i>
           </div>
-          <h3>持证办签</h3>
-          <p class="service-subtitle">Licensed Visa Service</p>
-          <div class="lang-content" data-lang="zh">
-            <p class="service-desc">团队持有澳洲正规签证相关执业牌照，熟知澳新英加爱尔兰新加坡等各国移民法案与签证政策，主营雇主担保工签、打工度假签证、白领实习签证、短期商务签等各类证件办理。从前期资料梳理、方案定制、文书撰写，到资料递交、移民局补料对接、进度跟进全流程闭环服务，根据申请人背景定制最优签证方案，稳步提升签证获批概率。</p>
-          </div>
-          <div class="lang-content" data-lang="en" style="display: none;">
-            <p class="service-desc">Licensed with official Australian immigration qualification, our team keeps updated with immigration laws of Australia, New Zealand, the UK, Canada, Ireland and Singapore. We handle employer-sponsored work visas, working holiday visas, internship visas and temporary visitor visas with full-cycle services including document sorting, application drafting, official submission and follow-up to optimize approval chances.</p>
-          </div>
-        </div>
-        
-        <!-- Service 4: Arrival & Accommodation Support -->
-        <div class="service-card">
-          <div class="service-icon" style="background: linear-gradient(135deg, #8B5CF6, #A78BFA);">
-            <i class="fas fa-home"></i>
-          </div>
-          <h3>落地安家</h3>
-          <p class="service-subtitle">Arrival & Accommodation Support</p>
-          <div class="lang-content" data-lang="zh">
-            <p class="service-desc">客户成功获批签证登陆澳洲后，提供机场专车接机服务，落地专人对接；出行前提前根据预算、工作地点匹配安全合规的居住房源，协助办理入住手续；落地后同步配套本地生活科普，包含交通出行、商超就医、银行卡申办、电话卡办理等实用指导，快速适应海外本地生活环境，免去初到异国的安置困扰。</p>
-          </div>
-          <div class="lang-content" data-lang="en" style="display: none;">
-            <p class="service-desc">We provide airport pick-up service upon clients' arrival in Australia. Proper accommodation matching clients' budget and workplace will be pre-arranged before departure with full check-in assistance. We also offer practical local guidance on transportation, medical service, bank account and SIM card application to help clients settle down smoothly.</p>
-          </div>
-        </div>
-        
-        <!-- Service 5: Full-cycle Career Planning -->
-        <div class="service-card">
-          <div class="service-icon" style="background: linear-gradient(135deg, #EC4899, #F472B6);">
-            <i class="fas fa-chart-line"></i>
-          </div>
-          <h3>职业陪跑</h3>
-          <p class="service-subtitle">Full-cycle Career Planning</p>
-          <div class="lang-content" data-lang="zh">
-            <p class="service-desc">提供从出国入职起步、在岗职业成长、岗位跳槽加薪，再到满足移民条件申请永居绿卡的全周期一对一专属陪跑服务。结合个人学历、技能、所在行业与当地移民政策动态调整发展路线，定期跟进职场工作近况，在关键节点给出跳槽、考证、岗位升级、社保积累等落地建议，长线规划海外定居路径。</p>
-          </div>
-          <div class="lang-content" data-lang="en" style="display: none;">
-            <p class="service-desc">We offer one-stop long-term career planning throughout clients' overseas journey: from initial employment, in-job promotion and salary raise to permanent residency application. We adjust development plans according to personal background, industry features and updated immigration policies, offering practical advice on job hopping, qualification certification and PR preparation at every key stage.</p>
-          </div>
-        </div>
-        
-        <!-- Service 6: Dependent & School Application Service -->
-        <div class="service-card">
-          <div class="service-icon" style="background: linear-gradient(135deg, #10B981, #34D399);">
-            <i class="fas fa-users"></i>
-          </div>
-          <h3>家属安置</h3>
-          <p class="service-subtitle">Dependent & School Application Service</p>
-          <div class="lang-content" data-lang="zh">
-            <p class="service-desc">多数澳洲合规工作签证支持主申请人配偶与未成年子女随行赴澳生活，我方免费为随行家属梳理签证附属申请材料，协助配偶办理随行签；针对随行适龄子女，全程免费对接澳洲公立、私立院校资源，完成择校、材料递交、入学报名全流程代办，助力家庭实现海外团聚、孩子就地入读海外学校。</p>
-          </div>
-          <div class="lang-content" data-lang="en" style="display: none;">
-            <p class="service-desc">Most Australian work visas allow spouses and dependent children to accompany the primary applicant. We help prepare dependent visa documents free of charge and provide complimentary full-service school application for kids, including school selection, document submission and enrollment arrangement to realize whole-family overseas settlement.</p>
-          </div>
+          <h3 data-i18n="service_programs_title">国际交流项目</h3>
+          <p data-i18n="service_programs_desc">包括志愿者、访问学者、短期交换和间隔年机会的交流项目。</p>
+          <ul class="service-features">
+            <li data-i18n="service_programs_feature1">志愿者岗位</li>
+            <li data-i18n="service_programs_feature2">研究奖学金</li>
+            <li data-i18n="service_programs_feature3">间隔年体验</li>
+            <li data-i18n="service_programs_feature4">文化沉浸</li>
+          </ul>
+          <a href="global-programs.html" class="btn btn-secondary" data-i18n="service_programs_cta">了解更多</a>
         </div>
       </div>
     </div>
