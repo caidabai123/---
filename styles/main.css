@@ -978,19 +978,20 @@
 
 .contact-toggle {
   position: relative;
-  width: 64px;
-  height: 64px;
+  width: 72px;
+  height: 72px;
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-secondary) 100%);
-  border: none;
+  background: linear-gradient(135deg, #2563EB 0%, #3B82F6 100%);
+  border: 3px solid rgba(255, 255, 255, 0.8);
   border-radius: 50%;
   color: var(--color-white);
-  font-size: var(--text-xl);
-  box-shadow: var(--shadow-xl);
+  font-size: 1.5rem;
+  box-shadow: 0 10px 30px rgba(37, 99, 235, 0.4);
   cursor: pointer;
   transition: all var(--transition-fast);
+  z-index: 9999;
 }
 
 .contact-toggle:hover {
