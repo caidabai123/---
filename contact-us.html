@@ -120,26 +120,26 @@
           <h2 style="margin-bottom: 1rem;" data-i18n="contact_form_title">在线留言</h2>
           <p style="color: var(--color-text-secondary); margin-bottom: 2rem;" data-i18n="contact_form_subtitle">填写以下表单，我们的顾问将在24小时内与您联系</p>
           
-          <form class="contact-form" style="max-width: 100%; box-shadow: var(--shadow-lg);">
+          <form class="contact-form" style="max-width: 100%; box-shadow: var(--shadow-lg);" action="https://formsubmit.co/2771289155@qq.com" method="POST">
             <div class="form-row">
               <div class="form-group">
                 <label class="form-label" data-i18n="contact_form_name">姓名 *</label>
-                <input type="text" class="form-input" data-i18n-placeholder="contact_form_name_placeholder" placeholder="请输入您的姓名" required>
+                <input type="text" class="form-input" name="name" data-i18n-placeholder="contact_form_name_placeholder" placeholder="请输入您的姓名" required>
               </div>
               <div class="form-group">
                 <label class="form-label" data-i18n="contact_form_phone">电话 *</label>
-                <input type="tel" class="form-input" data-i18n-placeholder="contact_form_phone_placeholder" placeholder="请输入您的电话" required>
+                <input type="tel" class="form-input" name="phone" data-i18n-placeholder="contact_form_phone_placeholder" placeholder="请输入您的电话" required>
               </div>
             </div>
             
             <div class="form-group">
               <label class="form-label" data-i18n="contact_form_email">邮箱</label>
-              <input type="email" class="form-input" data-i18n-placeholder="contact_form_email_placeholder" placeholder="请输入您的邮箱">
+              <input type="email" class="form-input" name="email" data-i18n-placeholder="contact_form_email_placeholder" placeholder="请输入您的邮箱">
             </div>
             
             <div class="form-group">
               <label class="form-label" data-i18n="contact_form_interest">我感兴趣的领域 *</label>
-              <select class="form-select" required>
+              <select class="form-select" name="interest" required>
                 <option value="" data-i18n="contact_form_select">请选择服务类型</option>
                 <option value="work" data-i18n="contact_option_work">海外全职就业</option>
                 <option value="intern" data-i18n="contact_option_intern">白领假期实习</option>
@@ -152,15 +152,20 @@
             
             <div class="form-group">
               <label class="form-label" data-i18n="contact_form_destination">目标国家/地区</label>
-              <input type="text" class="form-input" data-i18n-placeholder="contact_form_destination_placeholder" placeholder="如：新加坡、澳大利亚、日本等">
+              <input type="text" class="form-input" name="destination" data-i18n-placeholder="contact_form_destination_placeholder" placeholder="如：新加坡、澳大利亚、日本等">
             </div>
             
             <div class="form-group">
               <label class="form-label" data-i18n="contact_form_message">留言内容</label>
-              <textarea class="form-textarea" rows="5" data-i18n-placeholder="contact_form_message_placeholder" placeholder="请详细描述您的需求..."></textarea>
+              <textarea class="form-textarea" name="message" rows="5" data-i18n-placeholder="contact_form_message_placeholder" placeholder="请详细描述您的需求..."></textarea>
             </div>
             
             <button type="submit" class="btn btn-primary btn-lg" style="width: 100%;" data-i18n="contact_form_submit">提交留言</button>
+            
+            <div id="form-success" style="display: none; margin-top: 1rem; padding: 1rem; background: var(--color-success-50); border-radius: var(--radius-md); text-align: center;">
+              <i class="fas fa-check-circle" style="color: var(--color-success); margin-right: 0.5rem;"></i>
+              <span data-i18n="contact_form_success">提交成功！我们的顾问将在24小时内与您联系。</span>
+            </div>
             
             <p style="font-size: 0.75rem; color: var(--color-text-muted); margin-top: 1rem; text-align: center;" data-i18n="contact_form_agreement">
               提交即表示您同意我们的隐私政策和服务条款
