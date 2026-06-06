@@ -29,7 +29,7 @@
     <div class="container">
       <div class="header-inner">
         <a href="index.html" class="logo">
-          <img src="images/logo/48b96f22-c7f7-40b8-ac40-d9ac1f0bcf75.png" alt="领智优选" class="logo-img">
+          <img src="images/logo/48b96f22-c7f7-40b8-ac40-d9ac1f0bcf75-removebg-preview.png" alt="领智优选" class="logo-img">
           <div class="logo-text">
             <span class="logo-text-main" data-i18n="brand_name">领智优选</span>
             <span class="logo-text-sub">TOP WISE CHOICE</span>
@@ -40,14 +40,7 @@
           <ul class="nav-links">
             <li><a href="index.html" class="nav-link" data-i18n="nav_home">首页</a></li>
             <li><a href="destinations.html" class="nav-link active" data-i18n="nav_destinations">目的地</a></li>
-            <li class="nav-dropdown">
-              <a href="#" class="nav-link"><span data-i18n="nav_work">海外全职就业</span> <i class="fas fa-chevron-down" style="font-size: 0.75rem;"></i></a>
-              <ul class="nav-dropdown-menu">
-                <li><a href="work-overseas.html" class="nav-dropdown-item"><i class="fas fa-briefcase"></i> <span data-i18n="nav_work">海外全职就业</span></a></li>
-                <li><a href="intern-abroad.html" class="nav-dropdown-item"><i class="fas fa-user-graduate"></i> <span data-i18n="nav_intern_overseas">海外实习</span></a></li>
-                <li><a href="global-programs.html" class="nav-dropdown-item"><i class="fas fa-globe"></i> <span data-i18n="nav_global_exchange">全球交流项目</span></a></li>
-              </ul>
-            </li>
+            <li><a href="work-overseas.html" class="nav-link" data-i18n="nav_work">海外全职就业</a></li>
             <li><a href="visa-services.html" class="nav-link" data-i18n="nav_visa">签证服务</a></li>
             <li><a href="for-employers.html" class="nav-link" data-i18n="nav_service">服务</a></li>
             <li><a href="about-us.html" class="nav-link" data-i18n="nav_about">关于我们</a></li>
@@ -77,8 +70,6 @@
       <li><a href="index.html" class="mobile-nav-link" data-i18n="nav_home">首页</a></li>
       <li><a href="destinations.html" class="mobile-nav-link active" data-i18n="nav_destinations">目的地</a></li>
       <li><a href="work-overseas.html" class="mobile-nav-link" data-i18n="nav_work">海外全职就业</a></li>
-      <li><a href="intern-abroad.html" class="mobile-nav-link" data-i18n="nav_intern_overseas">海外实习</a></li>
-      <li><a href="global-programs.html" class="mobile-nav-link" data-i18n="nav_global_exchange">全球交流项目</a></li>
       <li><a href="visa-services.html" class="mobile-nav-link" data-i18n="nav_visa">签证服务</a></li>
       <li><a href="for-employers.html" class="mobile-nav-link" data-i18n="nav_service">服务</a></li>
       <li><a href="about-us.html" class="mobile-nav-link" data-i18n="nav_about">关于我们</a></li>
@@ -111,7 +102,6 @@
           </div>
           <div class="destination-title">
             <h2>美国 <span class="country-en">USA</span></h2>
-            <span class="destination-tag popular">热门</span>
           </div>
         </div>
         <div class="destination-content">
@@ -146,7 +136,6 @@
           </div>
           <div class="destination-title">
             <h2>澳大利亚 <span class="country-en">Australia</span></h2>
-            <span class="destination-tag wh">WHV</span>
           </div>
         </div>
         <div class="destination-content">
@@ -158,6 +147,7 @@
             <ul class="visa-list">
               <li><strong>482 签证 (TSS)</strong> - 短期技能短缺签证，雇主担保类，可工作 2-4 年</li>
               <li><strong>400 签证</strong> - 临时工作签证，适用于短期专业技能工作（通常 3-6 个月）</li>
+              <li><strong>407 签证</strong> - 培训签证，适用于在澳大利亚接受职业培训（最长 2 年）</li>
             </ul>
           </div>
           <div class="visa-type">
@@ -176,12 +166,11 @@
       <!-- Canada -->
       <div class="destination-card" id="canada">
         <div class="destination-header">
-          <div class="destination-flag" style="background: linear-gradient(135deg, #FF0000, #FFFFFF);">
-            <i class="fas fa-leaf" style="color: #FF0000;"></i>
+          <div class="destination-flag">
+            <img src="images/flags/ca.png" alt="加拿大国旗" class="flag-img">
           </div>
           <div class="destination-title">
             <h2>加拿大 <span class="country-en">Canada</span></h2>
-            <span class="destination-tag wh">WHV</span>
           </div>
         </div>
         <div class="destination-content">
@@ -211,32 +200,31 @@
       <!-- UK -->
       <div class="destination-card" id="uk">
         <div class="destination-header">
-          <div class="destination-flag" style="background: linear-gradient(135deg, #012169, #FFFFFF);">
-            <i class="fas fa-crown" style="color: #C8102E;"></i>
+          <div class="destination-flag">
+            <img src="images/flags/gb.png" alt="英国国旗" class="flag-img">
           </div>
           <div class="destination-title">
             <h2>英国 <span class="country-en">UK</span></h2>
-            <span class="destination-tag wh">YMS</span>
           </div>
         </div>
         <div class="destination-content">
           <div class="visa-type">
             <div class="visa-type-header">
               <i class="fas fa-briefcase"></i>
-              <h3>短期工作签证</h3>
+              <h3 data-i18n="dest_uk_work_visa">短期工作签证</h3>
             </div>
             <ul class="visa-list">
-              <li><strong>Skilled Worker (短期)</strong> - 技术工人签证，需雇主担保，可转永居</li>
-              <li><strong>Seasonal Worker</strong> - 季节性工人签证，主要面向农业、餐饮旅游业，最长 6 个月</li>
+              <li><strong>Skilled Worker (短期)</strong> - <span data-i18n="dest_uk_skilled">技术工人签证，需雇主担保，可转永居</span></li>
+              <li><strong>Seasonal Worker</strong> - <span data-i18n="dest_uk_seasonal">季节性工人签证，主要面向农业、餐饮旅游业，最长 6 个月</span></li>
             </ul>
           </div>
           <div class="visa-type">
             <div class="visa-type-header">
               <i class="fas fa-plane"></i>
-              <h3>打工度假签证</h3>
+              <h3 data-i18n="dest_wh_visa">打工度假签证</h3>
             </div>
             <ul class="visa-list">
-              <li><strong>Youth Mobility Scheme (YMS)</strong> - 青年流动计划，适用于 18-30 岁中国公民，每年 1000 个名额，可在英工作 2 年</li>
+              <li><strong>Youth Mobility Scheme (YMS)</strong> - <span data-i18n="dest_uk_yms">青年流动计划，适用于 18-30 岁中国公民，每年 1000 个名额，可在英工作 2 年</span></li>
             </ul>
           </div>
         </div>
@@ -245,12 +233,11 @@
       <!-- Ireland -->
       <div class="destination-card" id="ireland">
         <div class="destination-header">
-          <div class="destination-flag" style="background: linear-gradient(135deg, #169B62, #FF883E);">
-            <i class="fas fa-shamrock" style="color: white;"></i>
+          <div class="destination-flag">
+            <img src="images/flags/ie.png" alt="爱尔兰国旗" class="flag-img">
           </div>
           <div class="destination-title">
             <h2>爱尔兰 <span class="country-en">Ireland</span></h2>
-            <span class="destination-tag wh">WHA</span>
           </div>
         </div>
         <div class="destination-content">
@@ -279,32 +266,31 @@
       <!-- New Zealand -->
       <div class="destination-card" id="newzealand">
         <div class="destination-header">
-          <div class="destination-flag" style="background: linear-gradient(135deg, #00247D, #CC142B);">
-            <i class="fas fa-star" style="color: white;"></i>
+          <div class="destination-flag">
+            <img src="images/flags/nz.png" alt="新西兰国旗" class="flag-img">
           </div>
           <div class="destination-title">
             <h2>新西兰 <span class="country-en">New Zealand</span></h2>
-            <span class="destination-tag wh">WHV</span>
           </div>
         </div>
         <div class="destination-content">
           <div class="visa-type">
             <div class="visa-type-header">
               <i class="fas fa-briefcase"></i>
-              <h3>短期工作签证</h3>
+              <h3 data-i18n="dest_nz_work_visa">短期工作签证</h3>
             </div>
             <ul class="visa-list">
-              <li><strong>Essential Skills Work Visa</strong> - 基本技能工签，需雇主担保，根据技能等级可批 1-3 年</li>
-              <li><strong>Specific Purpose Work Visa</strong> - 特定目的工签，适用于特定项目或短期工作任务</li>
+              <li><strong>AEWV</strong> - <span data-i18n="dest_nz_eswv">新西兰AEWV工签，需雇主担保，根据技能等级可批 1-3 年</span></li>
+              <li><strong>Post-study Work Visa</strong> - <span data-i18n="dest_nz_spwv">新西兰毕业生开放工签，适用于新西兰毕业留学生</span></li>
             </ul>
           </div>
           <div class="visa-type">
             <div class="visa-type-header">
               <i class="fas fa-plane"></i>
-              <h3>打工度假签证</h3>
+              <h3 data-i18n="dest_wh_visa">打工度假签证</h3>
             </div>
             <ul class="visa-list">
-              <li><strong>Working Holiday Visa (WHV)</strong> - 每年 1000 个名额，面向 18-30 岁中国公民，可在新西兰工作旅行最长 12 个月</li>
+              <li><strong>Working Holiday Visa (WHV)</strong> - <span data-i18n="dest_nz_whv">每年 1000 个名额，面向 18-30 岁中国公民，可在新西兰工作旅行最长 12 个月</span></li>
             </ul>
           </div>
         </div>
@@ -318,7 +304,6 @@
           </div>
           <div class="destination-title">
             <h2>新加坡 <span class="country-en">Singapore</span></h2>
-            <span class="destination-tag asia">亚洲</span>
           </div>
         </div>
         <div class="destination-content">
@@ -363,22 +348,22 @@
               <div class="other-destination-icon">
                 <i class="fas fa-landmark"></i>
               </div>
-              <h4>欧洲</h4>
-              <p>德国、法国、荷兰等国家的短期工作/实习项目，涵盖工程、商科、艺术等领域</p>
+              <h4 data-i18n="dest_other_europe">欧洲</h4>
+              <p data-i18n="dest_other_europe_desc">德国、法国、荷兰等国家的短期工作/实习项目，涵盖工程、商科、艺术等领域</p>
             </div>
             <div class="other-destination-item">
               <div class="other-destination-icon">
                 <i class="fas fa-torii-gate"></i>
               </div>
-              <h4>亚洲</h4>
-              <p>日本、韩国、马来西亚等国家的文化交流项目、语言教师项目、技术实习机会</p>
+              <h4 data-i18n="dest_other_asia">亚洲</h4>
+              <p data-i18n="dest_other_asia_desc">日本、韩国、马来西亚等国家的文化交流项目、语言教师项目、技术实习机会</p>
             </div>
             <div class="other-destination-item">
               <div class="other-destination-icon">
                 <i class="fas fa-suitcase-rolling"></i>
               </div>
-              <h4>全球项目</h4>
-              <p>国际志愿者、邮轮工作、度假村管培生等多元化全球工作机会</p>
+              <h4 data-i18n="dest_other_global">全球项目</h4>
+              <p data-i18n="dest_other_global_desc">国际志愿者、邮轮工作、度假村管培生等多元化全球工作机会</p>
             </div>
           </div>
         </div>
@@ -408,13 +393,12 @@
         <div class="footer-grid">
           <div class="footer-brand">
             <a href="index.html" class="logo">
-              <div class="logo-icon">TW</div>
+              <img src="images/logo/48b96f22-c7f7-40b8-ac40-d9ac1f0bcf75-removebg-preview.png" alt="领智优选" class="logo-img" style="height: 40px;">
               <div class="logo-text">
                 <span class="logo-text-main" style="color: white;">领智优选</span>
                 <span class="logo-text-sub">TOP WISE CHOICE</span>
               </div>
             </a>
-            <p data-i18n="footer_tagline">自2020年起连接人才与全球机会</p>
             <div class="footer-social">
               <a href="#" class="social-link" aria-label="WeChat"><i class="fab fa-weixin"></i></a>
               <a href="#" class="social-link" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
@@ -446,15 +430,19 @@
             <h4 data-i18n="footer_contact">联系方式</h4>
             <div class="footer-contact-item">
               <i class="fas fa-envelope"></i>
-              <span>contact@topwisechoice.com</span>
+              <span>recruitment@wisechoice.email</span>
             </div>
             <div class="footer-contact-item">
               <i class="fas fa-phone"></i>
-              <span>+86 400-XXX-XXXX</span>
+              <span>+86 16621034856</span>
+            </div>
+            <div class="footer-contact-item">
+              <i class="fab fa-weixin"></i>
+              <span>AusHarvey</span>
             </div>
             <div class="footer-contact-item">
               <i class="fas fa-map-marker-alt"></i>
-              <span>广州市天河区XXX大厦</span>
+              <span>总部：澳洲悉尼 | 分公司：广州天河区环球都会大厦6619</span>
             </div>
           </div>
         </div>
@@ -467,7 +455,6 @@
           <a href="#" data-i18n="">服务条款</a>
         </div>
       </div>
-      <p style="text-align: center; font-size: 12px; color: #64748B; margin-top: 8px;" data-i18n="footer_disclaimer">内容经机器翻译，详情请与我们的团队确认。</p>
     </div>
   </footer>
 
